@@ -1,0 +1,11 @@
+torch
+gradio==4.42.0
+numpy==1.26.4
+transformers
+accelerate
+diffusers @ git+https://github.com/huggingface/diffusers
+huggingface_hub>=0.34.0,<2.0
+safetensors
+pillow
+fastapi<0.113.0
+pydantic<2.11.0
