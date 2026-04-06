@@ -1,15 +1,6 @@
 module.exports = {
   run: [
     {
-      method: "script.start",
-      params: {
-        uri: "torch.js",
-        params: {
-          venv: "env",
-        }
-      }
-    },
-    {
       method: "shell.run",
       params: {
         venv: "env",
@@ -20,9 +11,13 @@ module.exports = {
       }
     },
     {
-      method: "fs.link",
+      method: "script.start",
       params: {
-        venv: "env"
+        uri: "torch.js",
+        params: {
+          venv: "env",
+          path: "app"
+        }
       }
     }
   ]
